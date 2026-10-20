@@ -16,7 +16,7 @@ const App = (() => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('data/biodiversity.json');
+      const response = await fetch('Data/biodiversity.json');
       if (!response.ok) {
         throw new Error(`Gagal memuat dataset: HTTP ${response.status}`);
       }
