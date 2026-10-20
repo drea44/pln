@@ -235,7 +235,7 @@ const App = (() => {
         aria-label="Lihat detail ${sp.local}"
       >
         <div>
-          <div class="relative aspect-[4/3] overflow-hidden bg-linen-100">
+          <div class="relative aspect-[4/3] overflow-hidden bg-forest-950">
             <img src="${sp.img}" alt="${sp.local}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" style="background:#1a2e1a;"/>
             <div class="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent"></div>
             
