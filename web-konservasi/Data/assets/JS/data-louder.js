@@ -167,7 +167,7 @@ const App = (() => {
 
         <div class="lg:col-span-5 space-y-4">
           <div class="rounded-2xl overflow-hidden aspect-video border border-linen-200 shadow-sm relative group">
-            <img src="${p.photo}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+            <img src="${p.photo}" alt="${p.title}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" style="background:#0f1e0f;"/>
             <div class="absolute inset-0 bg-gradient-to-t from-forest-950/60 to-transparent"></div>
             <span class="absolute bottom-3 left-3 text-[10px] font-mono font-bold text-linen-50 bg-forest-950/70 px-2 py-0.5 rounded">
               Dokumentasi Kawasan
@@ -236,7 +236,7 @@ const App = (() => {
       >
         <div>
           <div class="relative aspect-[4/3] overflow-hidden bg-linen-100">
-            <img src="${sp.img}" alt="${sp.local}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy"/>
+            <img src="${sp.img}" alt="${sp.local}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" style="background:#1a2e1a;"/>
             <div class="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-transparent to-transparent"></div>
             
             <span class="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-wider bg-white/90 backdrop-blur-xs text-forest-950 px-2 py-0.5 rounded shadow-xs">
@@ -298,7 +298,7 @@ const App = (() => {
 
         <div class="flex flex-col sm:flex-row gap-5 items-start">
           <div class="w-full sm:w-44 h-44 rounded-2xl overflow-hidden shrink-0 border border-linen-200">
-            <img src="${sp.img}" alt="${sp.local}" class="w-full h-full object-cover"/>
+            <img src="${sp.img}" alt="${sp.local}" class="w-full h-full object-contain" style="background:#1a2e1a;"/>
           </div>
 
           <div class="space-y-2">
