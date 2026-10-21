@@ -1003,11 +1003,11 @@
       grid.innerHTML = filtered.map(sp => `
         <div onclick="openModal('${sp.id}')" class="group bg-white rounded-2xl border border-sand-200 overflow-hidden shadow-sm hover:shadow-md hover:border-emerald-700 cursor-pointer transition-all duration-300 flex flex-col justify-between">
           <div>
-            <div class="relative aspect-[4/3] overflow-hidden bg-stone-200">
+            <div class="relative aspect-[4/3] overflow-hidden bg-stone-100">
               <img 
                 src="${sp.img}" 
                 alt="${sp.local}" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1511497584788-87676104235f?w=600&auto=format&fit=crop&q=60';"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
@@ -1131,11 +1131,11 @@
           </div>
 
           <div class="lg:col-span-5 space-y-4">
-            <div class="rounded-2xl overflow-hidden aspect-video border border-sand-200 shadow-sm relative group bg-stone-200">
+            <div class="rounded-2xl overflow-hidden aspect-video border border-sand-200 shadow-sm relative group bg-stone-100">
               <img 
                 src="${p.photo}" 
                 alt="${p.title}" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1511497584788-87676104235f?w=600&auto=format&fit=crop&q=60';"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -1177,11 +1177,11 @@
           </div>
 
           <div class="flex flex-col sm:flex-row gap-5 items-start">
-            <div class="w-full sm:w-44 h-44 rounded-2xl overflow-hidden shrink-0 border border-sand-200 bg-stone-200">
+            <div class="w-full sm:w-44 h-44 rounded-2xl overflow-hidden shrink-0 border border-sand-200 bg-stone-100">
               <img 
                 src="${sp.img}" 
                 alt="${sp.local}" 
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1511497584788-87676104235f?w=600&auto=format&fit=crop&q=60';"
               />
             </div>
